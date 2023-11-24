@@ -19,12 +19,12 @@ public class FamilyCars extends car{
 
     @Override
     void WheelType(String Wheel) {
-        System.out.println("Wheel Type: " + Wheel);
+        System.out.println("alloy disc");
     }
 
     @Override
     void Colour(String color) {
-        System.out.println("Color: " + color);
+        System.out.println("BLACK");
     }
     void displayComponents() {
         System.out.println("Engine: " + engine);

@@ -10,11 +10,14 @@ import Model.Engine;
     String ac;
     String control;
 
-    public car getcar() {
-        Engine engine = getEngine();
-        Ac ac = getAc();
-        Control control = getControl();
-        return new ElectricVehicle(engine,ac,control);
+    public final void getcar() {
+         getEngine();
+         getAc();
+         getControl();
+         WheelType("alloydisc");
+         Colour("Black");
+
+        System.out.println("Car delivered to client");
 
     }
 
@@ -35,6 +38,8 @@ import Model.Engine;
         System.out.println("Engine: " + engine);
         System.out.println("AC: " + ac);
         System.out.println("Control: " + control);
+
+
     }
 
 }
